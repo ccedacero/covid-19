@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="home-bg">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="getData()">
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+    </nav>
+
+    <div id="progress"></div>
+    <div id="time">
+        <h3 id="date"></h3>
+        <h3 id="updatedTime"></h3>
+    </div>
+    <h2 id="title">
+        <h1>U.S. - State Coronav Virus Stats</h1>
+
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Search for your state">
+            <button id="searchButton" onclick="javascript:filterState()">Search</button>
+        </div>
+        <div id="totalBar">
+            <div id="confirmedTotal"></div>
+            <div id="hospitalizedTotal"></div>
+            <div id="deathsTotal"></div>
+        </div>
+
+        <div class="container">
+            <div class="nested">
+                <div id="stateData">
+                </div>
+                <div id="confirmedCases">
+                </div>
+                <div id="hospitalizations">
+                </div>
+                <div id="deaths">
+                </div>
+            </div>
+
+            <script src="./js/script.js" async defer></script>
+</body>
+
+</html>

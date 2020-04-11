@@ -1,0 +1,165 @@
+.container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1em;
+      color: whitesmoke;
+      justify-items: center;
+      border: 1px solid white;
+      text-align: center;
+      letter-spacing: normal;
+  }
+  #time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  button {
+    border-radius: .4em;
+    max-width: 10em;
+    padding: .8em;
+    margin:2em auto;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #fff;
+    font-weight: 700;
+    font-size: medium;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-family: 'Varela', sans-serif;
+    letter-spacing: .1em;
+  }
+
+
+
+  .home-bg {
+        font-family: 'Varela', sans-serif;
+        background: #396afc;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+    li {
+      border-bottom: 1px solid white;
+      list-style: none;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 800px) {
+      .container, #time, button, li, h1, div {
+        width: 100%;
+        font-size: .7em;
+        gap: 0;
+        justify-items: center;
+      }
+    }
+
+@media screen and (max-width: 799px) {
+  .container, #time, button, li, h1, div {
+    width: 100%;
+    font-size: .5em;
+    padding: 0px !important;
+  }
+}
+    
+
+.nested {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: auto ;
+  gap: 3em;
+  padding: 1em;
+}
+
+#totalBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 1em;
+  border: thin solid burlywood;
+  justify-items: center;
+  /* text-align: center; */
+  background-color: ivory;
+}
+
+#confirmedTotal {
+justify-self:end;
+}
+
+#deathsTotal {
+justify-self: start;
+}
+
+#progress {
+  border-bottom: .7em solid #fff;
+  width: 0;
+  position: fixed;
+  top: 0; 
+  left:0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  font-size: .8em;
+}
+
+input {
+  padding: 1.5em;
+  width: 20em;
+}
+
+
+#search {
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.about-gb {
+background-image:
+linear-gradient(180deg,rgba(97,97,115,.45) 0%,rgba(165,141,21,.43) 100%),url('https://images.unsplash.com/photo-1584254520678-31fe4dce5306?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')!important;
+color: #fff;
+font-size: 1.5em;
+}
+
+#container-ab {
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-self: start;
+text-align: left;
+}
+
+#container-ab a {
+  color: #fff;
+}
