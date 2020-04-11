@@ -2,3 +2,4 @@
 
 This first version is not dry at all. I will restructure the website, add additional functionality, and clean up redundant code soon.
 
+Website can be seen live at : http://documentingcorona.com/
