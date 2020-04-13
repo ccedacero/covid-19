@@ -1,0 +1,136 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nested {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #fff;
+    justify-items: center;
+    gap: 1em;
+    padding: .5em;
+    text-align: start;
+}
+body {
+    font-family: 'Varela', sans-serif;
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+    color: #fff;
+    font-size: 1em;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#totalBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .7em;
+  border: thin solid burlywood;
+  justify-items: center;
+  background-color: ivory;
+  color: #000;
+  align-self: center;
+}
+
+#search {
+    text-align: center;
+}
+
+input {
+    padding: 1.5em;
+    width: 20em;
+}
+
+button {
+    border-radius: .4em;
+    max-width: 10em;
+    padding:.8em;
+    margin:2em auto;
+    background-color: #3CAF50;
+    border-color: #3CAF50;
+    color: #fff;
+    font-weight: 800;
+    font-size: medium;
+    border: 1px solid #ccc;
+    outline: none;
+    letter-spacing: .1em;
+}
+#time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size:1.5em;
+    padding: 1em;
+}
+a {
+    color: ivory;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#progress {
+    position: fixed;
+    border-bottom: .7em solid #fff;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    overflow: hidden;
+    background: transparent;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container, #time, button, li, h1, div {
+      width: 100%;
+      font-size: .7em;
+      gap: 0;
+      justify-items: center;
+    }
+  }
+
+@media screen and (max-width: 799px) {
+.container, #time, button, li, h1, div {
+  width: 100%;
+  font-size: .5em;
+  /* padding: px !important; */
+}
+}
+
+@media screen and (max-width: 480px) {
+    .container, #time, button, li, h1, div, #searchinput {
+      width: 100%;
+      font-size: .3em;
+      padding: 0px !important;
+    }
+    input {
+    padding: 0.5em;
+    width: 10em;
+    }
+    button {
+    max-width: 32em;
+    }
+    }

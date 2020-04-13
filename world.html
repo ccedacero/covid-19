@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>World Coronavirus Stats - Documenting Coronavirus</title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/world.css">
+
+</head>
+
+<body onload="worldCases()">
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="World.html">World</a>
+        <a href="About.html">About</a>
+    </nav>
+
+    <div id="progress"></div>
+    <div id="time">
+        <h3 id="date"></h3>
+        <h3 id="updatedTime"></h3>
+    </div>
+        <div id="search">
+            <h1>Worldwide Coronavirus Stats</h1>
+            <input type="text" id="searchInput" placeholder="Country Search">
+            <button id="searchButton" onclick="javascript:filterCountry()">Search</button>
+        </div>
+        <div id="totalBar">
+            <div id="confirmedTotal"></div>
+            <div id="deathsTotal"></div>
+        </div>
+
+        <div class="container">
+            <div class="nested">
+                <div id="countryData">
+                </div>
+                <div id="confirmedCases">
+                </div>
+                <div id="deaths">
+                </div>
+            </div>
+            <script src="./js/world.js" async defer></script>
+</body>
+
+</html>
