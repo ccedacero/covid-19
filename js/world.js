@@ -16,14 +16,18 @@
   function secsToStr(num) {
     return new Date(num).toDateString();
   }
+
+  // fetch(request, {mode: 'no-cors'});
+
   function worldCases() {
     let confirmedTotal = 0;
     let deathsTotal = 0;
     let countryData = "<h3>Country</h3>";
     let confirmedCases = "<h3>Confirmed Cases</h3>";
     let deaths = "<h3>Confirmed Deaths</h3>";
-    fetch('https://corona.lmao.ninja/countries')
+    fetch('https://cors-anywhere.herokuapp.com/https://corona.lmao.ninja/v2/countries')
     .then((res) => res.json())
+    // .then (text => console.log(text))
     .then((data) => {
       data.forEach((location) => {
           countryData += `
@@ -85,7 +89,7 @@
       let countryData = "<h3>Country</h3>";
       let confirmedCases = "<h3>Confirmed Cases</h3>";
       let deaths = "<h3>Confirmed Deaths</h3>";
-      fetch('https://corona.lmao.ninja/countries')
+      fetch('https://cors-anywhere.herokuapp.com/https://corona.lmao.ninja/v2/countries')
       .then((res) => res.json())
       .then((data) => {
         data.forEach((location) => {

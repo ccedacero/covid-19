@@ -93,6 +93,7 @@ justify-self: start;
 }
 
 #progress {
+  padding-top: 5rem;
   border-bottom: .7em solid #fff;
   width: 0;
   position: fixed;
