@@ -1,236 +1,235 @@
 function transformText(txtValue) {
-  let newStr;  
-  for(let i = 0 ; i < stateData.length; i++) {
-      if(stateData[i]['text'] === txtValue.toUpperCase()){
-     
-         newStr = stateData[i]['value'];
-      }
-    } txtValue = newStr;
-  return txtValue;
+  let newStr;
+  for (let i = 0; i < stateData.length; i++) {
+    if (stateData[i]["text"] === txtValue.toUpperCase()) {
+      newStr = stateData[i]["value"];
+    }
   }
-  
+  txtValue = newStr;
+  return txtValue;
+}
 
 let stateData = [
   {
-    "value": "AK",
-    "text": "ALASKA"
+    value: "AK",
+    text: "ALASKA",
   },
   {
-    "value": "AL",
-    "text": "ALABAMA"
+    value: "AL",
+    text: "ALABAMA",
   },
   {
-    "value": "AR",
-    "text": "ARKANSAS"
+    value: "AR",
+    text: "ARKANSAS",
   },
   {
-    "value": "AS",
-    "text": "AMERICAN SAMOA"
+    value: "AS",
+    text: "AMERICAN SAMOA",
   },
   {
-    "value": "AZ",
-    "text": "ARIZONA"
+    value: "AZ",
+    text: "ARIZONA",
   },
   {
-    "value": "CA",
-    "text": "CALIFORNIA"
+    value: "CA",
+    text: "CALIFORNIA",
   },
   {
-    "value": "CO",
-    "text": "COLORADO"
+    value: "CO",
+    text: "COLORADO",
   },
   {
-    "value": "CT",
-    "text": "CONNECTICUT"
+    value: "CT",
+    text: "CONNECTICUT",
   },
   {
-    "value": "DC",
-    "text": "DISTRICT OF COLUMBIA"
+    value: "DC",
+    text: "DISTRICT OF COLUMBIA",
   },
   {
-    "value": "DE",
-    "text": "DELAWARE"
+    value: "DE",
+    text: "DELAWARE",
   },
   {
-    "value": "FL",
-    "text": "FLORIDA"
+    value: "FL",
+    text: "FLORIDA",
   },
   {
-    "value": "GA",
-    "text": "GEORGIA"
+    value: "GA",
+    text: "GEORGIA",
   },
   {
-    "value": "GU",
-    "text": "GUAM"
+    value: "GU",
+    text: "GUAM",
   },
   {
-    "value": "HI",
-    "text": "HAWAII"
+    value: "HI",
+    text: "HAWAII",
   },
   {
-    "value": "IA",
-    "text": "IOWA"
+    value: "IA",
+    text: "IOWA",
   },
   {
-    "value": "ID",
-    "text": "IDAHO"
+    value: "ID",
+    text: "IDAHO",
   },
   {
-    "value": "IL",
-    "text": "ILLINOIS"
+    value: "IL",
+    text: "ILLINOIS",
   },
   {
-    "value": "IN",
-    "text": "INDIANA"
+    value: "IN",
+    text: "INDIANA",
   },
   {
-    "value": "KS",
-    "text": "KANSAS"
+    value: "KS",
+    text: "KANSAS",
   },
   {
-    "value": "KY",
-    "text": "KENTUCKY"
+    value: "KY",
+    text: "KENTUCKY",
   },
   {
-    "value": "LA",
-    "text": "LOUISIANA"
+    value: "LA",
+    text: "LOUISIANA",
   },
   {
-    "value": "MA",
-    "text": "MASSACHUSETTS"
+    value: "MA",
+    text: "MASSACHUSETTS",
   },
   {
-    "value": "MD",
-    "text": "MARYLAND"
+    value: "MD",
+    text: "MARYLAND",
   },
   {
-    "value": "ME",
-    "text": "MAINE"
+    value: "ME",
+    text: "MAINE",
   },
   {
-    "value": "MI",
-    "text": "MICHIGAN"
+    value: "MI",
+    text: "MICHIGAN",
   },
   {
-    "value": "MN",
-    "text": "MINNESOTA"
+    value: "MN",
+    text: "MINNESOTA",
   },
   {
-    "value": "MO",
-    "text": "MISSOURI"
+    value: "MO",
+    text: "MISSOURI",
   },
   {
-    "value": "MS",
-    "text": "MISSISSIPPI"
+    value: "MS",
+    text: "MISSISSIPPI",
   },
   {
-    "value": "MT",
-    "text": "MONTANA"
+    value: "MT",
+    text: "MONTANA",
   },
   {
-    "value": "NC",
-    "text": "NORTH CAROLINA"
+    value: "NC",
+    text: "NORTH CAROLINA",
   },
   {
-    "value": "ND",
-    "text": "NORTH DAKOTA"
+    value: "ND",
+    text: "NORTH DAKOTA",
   },
   {
-    "value": "NE",
-    "text": "NEBRASKA"
+    value: "NE",
+    text: "NEBRASKA",
   },
   {
-    "value": "NH",
-    "text": "NEW HAMPSHIRE"
+    value: "NH",
+    text: "NEW HAMPSHIRE",
   },
   {
-    "value": "NJ",
-    "text": "NEW JERSEY"
+    value: "NJ",
+    text: "NEW JERSEY",
   },
   {
-    "value": "NM",
-    "text": "NEW MEXICO"
+    value: "NM",
+    text: "NEW MEXICO",
   },
   {
-    "value": "NV",
-    "text": "NEVADA"
+    value: "NV",
+    text: "NEVADA",
   },
   {
-    "value": "NY",
-    "text": "NEW YORK"
+    value: "NY",
+    text: "NEW YORK",
   },
   {
-    "value": "OH",
-    "text": "OHIO"
+    value: "OH",
+    text: "OHIO",
   },
   {
-    "value": "OK",
-    "text": "OKLAHOMA"
+    value: "OK",
+    text: "OKLAHOMA",
   },
   {
-    "value": "OR",
-    "text": "OREGON"
+    value: "OR",
+    text: "OREGON",
   },
   {
-    "value": "PA",
-    "text": "PENNSYLVANIA"
+    value: "PA",
+    text: "PENNSYLVANIA",
   },
   {
-    "value": "PR",
-    "text": "PUERTO RICO"
+    value: "PR",
+    text: "PUERTO RICO",
   },
   {
-    "value": "RI",
-    "text": "RHODE ISLAND"
+    value: "RI",
+    text: "RHODE ISLAND",
   },
   {
-    "value": "SC",
-    "text": "SOUTH CAROLINA"
+    value: "SC",
+    text: "SOUTH CAROLINA",
   },
   {
-    "value": "SD",
-    "text": "SOUTH DAKOTA"
+    value: "SD",
+    text: "SOUTH DAKOTA",
   },
   {
-    "value": "TN",
-    "text": "TENNESSEE"
+    value: "TN",
+    text: "TENNESSEE",
   },
   {
-    "value": "TX",
-    "text": "TEXAS"
+    value: "TX",
+    text: "TEXAS",
   },
   {
-    "value": "UT",
-    "text": "UTAH"
+    value: "UT",
+    text: "UTAH",
   },
   {
-    "value": "VA",
-    "text": "VIRGINIA"
+    value: "VA",
+    text: "VIRGINIA",
   },
   {
-    "value": "VI",
-    "text": "VIRGIN ISLANDS"
+    value: "VI",
+    text: "VIRGIN ISLANDS",
   },
   {
-    "value": "VT",
-    "text": "VERMONT"
+    value: "VT",
+    text: "VERMONT",
   },
   {
-    "value": "WA",
-    "text": "WASHINGTON"
+    value: "WA",
+    text: "WASHINGTON",
   },
   {
-    "value": "WI",
-    "text": "WISCONSIN"
+    value: "WI",
+    text: "WISCONSIN",
   },
   {
-    "value": "WV",
-    "text": "WEST VIRGINIA"
+    value: "WV",
+    text: "WEST VIRGINIA",
   },
   {
-    "value": "WY",
-    "text": "WYOMING"
-  }
+    value: "WY",
+    text: "WYOMING",
+  },
 ];
 
 //line as you scroll down
@@ -246,7 +245,7 @@ addComma = (num) => {
 };
 
 function getData() {
-  fetch("https://covidtracking.com/api/states")
+  fetch("https://api.covidtracking.com/v1/states/current.json")
     .then((res) => res.json())
     .then((data) => {
       let confirmedTotal = 0;
@@ -268,13 +267,13 @@ function getData() {
         }
 
         if (state.hospitalized !== "N/A") {
-          hospitalizedTotal += parseInt(state.hospitalized)
+          hospitalizedTotal += parseInt(state.hospitalized);
         }
         if (state.positive !== "N/A") {
-          confirmedTotal += parseInt(state.positive)
+          confirmedTotal += parseInt(state.positive);
         }
         if (state.death !== "N/A") {
-          deathsTotal += parseInt(state.death)
+          deathsTotal += parseInt(state.death);
         }
 
         stateData += `
@@ -303,7 +302,8 @@ function getData() {
       document.getElementById("hospitalizations").innerHTML = hospitalizations;
       document.getElementById("deaths").innerHTML = deaths;
       document.getElementById("updatedTime").innerHTML =
-        "Table last updated: " + ' '+
+        "Table last updated: " +
+        " " +
         data[0].lastUpdateEt +
         '<br> Source: <a target="_blank" href= "https://covidtracking.com/">The COVID Tracking Project</a>';
       document.getElementById("confirmedTotal").innerHTML =
@@ -335,116 +335,119 @@ input.addEventListener("keyup", function (event) {
 function filterState() {
   txtValue = document.getElementById("searchInput").value.toUpperCase();
   if (txtValue.length > 2) {
-   let newStr = transformText(txtValue);
-  
-  fetch("https://covidtracking.com/api/states")
-    .then((res) => res.json())
-    .then((data) => {
-      let confirmedTotal = 0;
-      let hospitalizedTotal = 0;
-      let deathsTotal = 0;
-      let stateData = "<h3>States & Territories </h3>";
-      let confirmedCases = "<h3>Confirmed Cases</h3>";
-      let hospitalizations = "<h3>Total Hospitalized</h3>";
-      let deaths = "<h3>Confirmed Deaths</h3>";
-      data.forEach(function (state) {
-        if (newStr === state.state) {
-          if (state.hospitalized === null) {
-            state.hospitalized = "N/A";
-          } else {
-            hospitalizedTotal += parseInt(state.positive);
-          }
+    let newStr = transformText(txtValue);
 
-          stateData += `
+    fetch("https://api.covidtracking.com/v1/states/current.json")
+      .then((res) => res.json())
+      .then((data) => {
+        let confirmedTotal = 0;
+        let hospitalizedTotal = 0;
+        let deathsTotal = 0;
+        let stateData = "<h3>States & Territories </h3>";
+        let confirmedCases = "<h3>Confirmed Cases</h3>";
+        let hospitalizations = "<h3>Total Hospitalized</h3>";
+        let deaths = "<h3>Confirmed Deaths</h3>";
+        data.forEach(function (state) {
+          if (newStr === state.state) {
+            if (state.hospitalized === null) {
+              state.hospitalized = "N/A";
+            } else {
+              hospitalizedTotal += parseInt(state.positive);
+            }
+
+            stateData += `
            <ul id="stateData">
            <li>${state.state}</li>
            </ul>
            `;
-          confirmedCases += `
+            confirmedCases += `
             <li>${addComma(state.positive)}</li>
            </ul>
            `;
-          hospitalizations += `
+            hospitalizations += `
             <li>${addComma(state.hospitalized)}</li>
            </ul>
            `;
-          deaths += `
+            deaths += `
             <li>${addComma(state.death)}</li>
            </ul>
          `;
-          confirmedTotal += parseInt(state.positive);
-          deathsTotal += parseInt(state.death);
-        }
-      });
-      document.getElementById("stateData").innerHTML = stateData;
-      document.getElementById("confirmedCases").innerHTML = confirmedCases;
-      document.getElementById("hospitalizations").innerHTML = hospitalizations;
-      document.getElementById("deaths").innerHTML = deaths;
-      document.getElementById("updatedTime").innerHTML =
-        "Database last updated: " +
-        data[0].lastUpdateEt +
-        '<br> Source: <a target="_blank" href= "https://covidtracking.com/">The COVID Tracking Project</a>';
-      document.getElementById("confirmedTotal").innerHTML =
-        "Confirmed Total: " + addComma(confirmedTotal);
-      document.getElementById("hospitalizedTotal").innerHTML =
-        "Hospitalized Total: " + addComma(hospitalizedTotal);
-      document.getElementById("deathsTotal").innerHTML =
-        "Deaths Total: " + addComma(deathsTotal);
-    });
-} else {
-    
-  fetch("https://covidtracking.com/api/states")
-    .then((res) => res.json())
-    .then((data) => {
-      let confirmedTotal = 0;
-      let hospitalizedTotal = 0;
-      let deathsTotal = 0;
-      let stateData = "<h3>States & Territories </h3>";
-      let confirmedCases = "<h3>Confirmed Cases</h3>";
-      let hospitalizations = "<h3>Total Hospitalized</h3>";
-      let deaths = "<h3>Confirmed Deaths</h3>";
-      data.forEach(function (state) {
-        if (txtValue === state.state) {
-          if (state.hospitalized === null) {
-            state.hospitalized = "N/A";
-          } else {
-            hospitalizedTotal += parseInt(state.positive);
+            confirmedTotal += parseInt(state.positive);
+            deathsTotal += parseInt(state.death);
           }
-          stateData += `
+        });
+        document.getElementById("stateData").innerHTML = stateData;
+        document.getElementById("confirmedCases").innerHTML = confirmedCases;
+        document.getElementById(
+          "hospitalizations"
+        ).innerHTML = hospitalizations;
+        document.getElementById("deaths").innerHTML = deaths;
+        document.getElementById("updatedTime").innerHTML =
+          "Database last updated: " +
+          data[0].lastUpdateEt +
+          '<br> Source: <a target="_blank" href= "https://covidtracking.com/">The COVID Tracking Project</a>';
+        document.getElementById("confirmedTotal").innerHTML =
+          "Confirmed Total: " + addComma(confirmedTotal);
+        document.getElementById("hospitalizedTotal").innerHTML =
+          "Hospitalized Total: " + addComma(hospitalizedTotal);
+        document.getElementById("deathsTotal").innerHTML =
+          "Deaths Total: " + addComma(deathsTotal);
+      });
+  } else {
+    fetch("https://covidtracking.com/api/states")
+      .then((res) => res.json())
+      .then((data) => {
+        let confirmedTotal = 0;
+        let hospitalizedTotal = 0;
+        let deathsTotal = 0;
+        let stateData = "<h3>States & Territories </h3>";
+        let confirmedCases = "<h3>Confirmed Cases</h3>";
+        let hospitalizations = "<h3>Total Hospitalized</h3>";
+        let deaths = "<h3>Confirmed Deaths</h3>";
+        data.forEach(function (state) {
+          if (txtValue === state.state) {
+            if (state.hospitalized === null) {
+              state.hospitalized = "N/A";
+            } else {
+              hospitalizedTotal += parseInt(state.positive);
+            }
+            stateData += `
            <ul id="stateData">
            <li>${state.state}</li>
            </ul>
            `;
-          confirmedCases += `
+            confirmedCases += `
             <li>${addComma(state.positive)}</li>
            </ul>
            `;
-          hospitalizations += `
+            hospitalizations += `
             <li>${addComma(state.hospitalized)}</li>
            </ul>
            `;
-          deaths += `
+            deaths += `
             <li>${addComma(state.death)}</li>
            </ul>
          `;
-          confirmedTotal += parseInt(state.positive);
-          deathsTotal += parseInt(state.death);
-        }
+            confirmedTotal += parseInt(state.positive);
+            deathsTotal += parseInt(state.death);
+          }
+        });
+        document.getElementById("stateData").innerHTML = stateData;
+        document.getElementById("confirmedCases").innerHTML = confirmedCases;
+        document.getElementById(
+          "hospitalizations"
+        ).innerHTML = hospitalizations;
+        document.getElementById("deaths").innerHTML = deaths;
+        document.getElementById("updatedTime").innerHTML =
+          "Database last updated: " +
+          data[0].lastUpdateEt +
+          '<br> Source: <a target="_blank" href= "https://covidtracking.com/">The COVID Tracking Project</a>';
+        document.getElementById("confirmedTotal").innerHTML =
+          "Confirmed Total: " + addComma(confirmedTotal);
+        document.getElementById("hospitalizedTotal").innerHTML =
+          "Hospitalized Total: " + addComma(hospitalizedTotal);
+        document.getElementById("deathsTotal").innerHTML =
+          "Deaths Total: " + addComma(deathsTotal);
       });
-      document.getElementById("stateData").innerHTML = stateData;
-      document.getElementById("confirmedCases").innerHTML = confirmedCases;
-      document.getElementById("hospitalizations").innerHTML = hospitalizations;
-      document.getElementById("deaths").innerHTML = deaths;
-      document.getElementById("updatedTime").innerHTML =
-        "Database last updated: " +
-        data[0].lastUpdateEt +
-        '<br> Source: <a target="_blank" href= "https://covidtracking.com/">The COVID Tracking Project</a>';
-      document.getElementById("confirmedTotal").innerHTML =
-        "Confirmed Total: " + addComma(confirmedTotal);
-      document.getElementById("hospitalizedTotal").innerHTML =
-        "Hospitalized Total: " + addComma(hospitalizedTotal);
-      document.getElementById("deathsTotal").innerHTML =
-        "Deaths Total: " + addComma(deathsTotal);
-    });
-}
+  }
 }
